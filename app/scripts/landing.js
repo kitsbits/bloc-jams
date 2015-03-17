@@ -1,8 +1,15 @@
 $(document).ready(function() {
-  $('.hero-content h3').click(function() {
-    var subText = $(this).text();
-    $(this).text(subText + "!");
-  });
+  var onHoverColorAction = function(event) {
+    console.log('Hover action triggered.');
+    $(this).css({'color': '#FA9D61'});
+  };
+
+  var offHoverColorAction = function(event) {
+    console.log('Off-hover action triggered.');
+    $(this).css({'color': 'white'});
+  };
+
+  $('.hero-content h3').hover(onHoverColorAction, offHoverColorAction);
 
   var onHoverAction = function(event) {
     console.log('Hover action triggered.');
