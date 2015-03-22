@@ -123,6 +123,22 @@ var albumMarconi = {
    ]
 };
 
+//Yet another example album
+var albumNoDice = {
+  name: 'Luck Be a Lady',
+  artist: 'The Gamblers',
+  label: 'Snake Eyes',
+  year: '1937',
+  albumArtUrl: '/images/album-placeholder.png',
+  songs: [
+    { name: 'Bettin\' on a Winner', length: '2:37' },
+    { name: 'Call me Crazy', length: '2:43' },
+    { name: 'Bygones', length: '3:26' },
+    { name: 'Gone Broke Polka', length: '2:17'},
+    { name: 'All Aces', length: '3:06' }
+  ]
+}
+
 var createSongRow = function(songNumber, songName, songLength) {
   var template =
      '<tr>'
@@ -163,6 +179,8 @@ var changeAlbumview = function(album) {
   }
 };
 
+
+
 // This 'if' condition is used to prevent the jQuery modifications
 // from happening on non-Album view pages.
 //  - Use a regex to validate that the url has "/album" in its path.
@@ -170,8 +188,12 @@ if (document.URL.match(/\/album.html/)) {
   // wait until HTML has loaded
   $(document).ready(function() {
     changeAlbumview(albumPicasso);
+
+    //$('.album-title').click(function() {
+      //console.log('triggered');
+    //});
   });
-}
+};
 });
 
 ;require.register("scripts/app", function(exports, require, module) {
