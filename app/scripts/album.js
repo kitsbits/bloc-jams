@@ -46,16 +46,64 @@ var albumNoDice = {
   ]
 }
 
+var currentlyPlayingSong = null;
+
 var createSongRow = function(songNumber, songName, songLength) {
   var template =
      '<tr>'
-   + '  <td class="col-md-1">' + songNumber + '</td>'
-   + '  <td class="col-md-9">' + songName + '</td>'
-   + '  <td class="col-md-2">' + songLength + '</td>'
-   + '</tr>'
-   ;
+    + '  <td class="song-number col-md-1" data-song-number="' + songNumber + '">' + songNumber + '</td>'
+    + '  <td class="col-md-9">' + songName + '</td>'
+    + '  <td class="col-md-2">' + songLength + '</td>'
+    + '</tr>'
+    ;
 
-  return $(template);
+  var $row = $(template);
+
+// Change from a song number to play button when the song IS NOT playing AND we hover over the row
+  var onHover = function(event) {
+    var songNumberCell = $(this).find('.song-number');
+    var songNumber = songNumberCell.data('song-number');
+    if (songNumber !== currentlyPlayingSong) {
+      songNumberCell.html('<a class="album-song-button"><i class="fa fa-play"></i></a>');
+    }
+  };
+
+// Change from a play button to song number when the song IS NOT playing AND we hover off the row
+  var offHover = function(event) {
+    var songNumberCell = $(this).find('.song-number');
+    var songNumber = songNumberCell.data('song-number');
+    if (songNumber !== currentlyPlayingSong) {
+      songNumberCell.html(songNumber);
+    }
+  };
+
+// Toggle the play, pause, and song number based on which play/pause button we clicked on.
+  var clickHandler = function(event) {
+    var songNumber = $(this).data('song-number');
+
+    if (currentlyPlayingSong !== null) {
+      // Revert to song number for currently playing song bc user started playing new song.
+      currentlyPlayingCell = $('.song-number[data-song-number="' + currentlyPlayingSong +'"]');
+      currentlyPlayingCell.html(currentlyPlayingSong);
+    }
+
+    if (currentlyPlayingSong !== songNumber) {
+      // Switch from Play -> Pause to indicate new song is playing
+      $(this).html('<a class="album-song-button"><i class="fa fa-pause"></i></a>');
+      currentlyPlayingSong = songNumber;
+    }
+
+    else if (currentlyPlayingSong === songNumber) {
+      // Switch from pause to play for current song to indicate pausing
+      $(this).html('<a class="album-song-button"><i class="fa fa-play"></i></a>');
+      currentlyPlayingSong = null;
+    }
+
+  };
+
+  $row.find('.song-number').click(clickHandler);
+  $row.hover(onHover, offHover);
+  return $row;
 };
 
 var changeAlbumview = function(album) {
