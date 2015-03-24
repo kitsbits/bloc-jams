@@ -236,9 +236,9 @@ if (document.URL.match(/\/album.html/)) {
   $(document).ready(function() {
     changeAlbumview(albumPicasso);
 
-    //$('.album-title').click(function() {
-      //console.log('triggered');
-    //});
+    $('.album-title').on('click', function() {
+      console.log('triggered');
+    });
   });
 };
 });
