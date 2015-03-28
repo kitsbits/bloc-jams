@@ -1,209 +1,153 @@
-@media -sass-debug-info{filename{}line{font-family:\000031}}
-html {
-  height: 100%; }
-
-@media -sass-debug-info{filename{}line{font-family:\000035}}
-body {
-  font-family: 'Open Sans';
-  color: white;
-  min-height: 100%;
-  background: -webkit-radial-gradient(#2b1339, #380c77);
-  background: radial-gradient(#2b1339, #380c77);
-  padding-bottom: 150px; }
-
-@media -sass-debug-info{filename{}line{font-family:\0000318}}
-body.landing {
-  background: #5B5579;
-  padding-bottom: 0; }
-
-@media -sass-debug-info{filename{}line{font-family:\0000325}}
-body.landing .navbar {
-  margin-bottom: 0; }
-
-@media -sass-debug-info{filename{}line{font-family:\0000329}}
-.player-header-nav {
-  background-color: rgba(123, 70, 163, 0.9); }
-
-@media -sass-debug-info{filename{}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_landing\.scss}line{font-family:\000031}}
 .hero-content {
   background: #2F1D57;
   padding: 100px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_landing\.scss}line{font-family:\000035}}
+  .hero-content h1 {
+    font-size: 70px;
+    margin-bottom: 50px;
+    font-weight: 300; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_landing\.scss}line{font-family:\0000311}}
+  .hero-content .selling-points {
+    padding: 100px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_landing\.scss}line{font-family:\0000314}}
+    .hero-content .selling-points .point {
+      width: 32%;
+      float: left;
+      padding: 0 0.5%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_landing\.scss}line{font-family:\0000319}}
+      .hero-content .selling-points .point h5 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+        height: 85px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_landing\.scss}line{font-family:\0000326}}
+      .hero-content .selling-points .point p {
+        font-size: 14px;
+        padding: 100px 0; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000338}}
-.hero-content h1 {
-  font-size: 70px;
-  margin-bottom: 50px;
-  font-weight: 300; }
-
-@media -sass-debug-info{filename{}line{font-family:\0000344}}
-.selling-points {
-  padding: 100px; }
-
-@media -sass-debug-info{filename{}line{font-family:\0000348}}
-.selling-points .point {
-  width: 32%;
-  float: left;
-  padding: 0 0.5%; }
-
-@media -sass-debug-info{filename{}line{font-family:\0000354}}
-.selling-points .point h5 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  text-align: center;
-  height: 85px; }
-
-@media -sass-debug-info{filename{}line{font-family:\0000362}}
-.selling-points .point p {
-  font-size: 14px;
-  padding: 100px 0; }
-
-@media -sass-debug-info{filename{}line{font-family:\0000367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\000031}}
 .album-header-container {
   margin-top: 55px;
   margin-bottom: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\000035}}
+  .album-header-container .album-header-information {
+    margin-top: 45px;
+    margin-bottom: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\000039}}
+    .album-header-container .album-header-information h3, .album-header-container .album-header-information h4, .album-header-container .album-header-information h5 {
+      line-height: 150%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\0000313}}
+    .album-header-container .album-header-information h3 {
+      font-size: 48px;
+      font-weight: 300; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\0000318}}
+    .album-header-container .album-header-information h4 {
+      font-size: 24px;
+      font-weight: 700; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\0000323}}
+    .album-header-container .album-header-information h5 {
+      font-size: 16px;
+      font-weight: 500; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\0000329}}
+  .album-header-container .table.album-song-listening {
+    font-weight: 300; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\0000332}}
+    .album-header-container .table.album-song-listening td {
+      padding: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.4); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\0000338}}
+  .album-header-container .album-song-button {
+    text-align: center;
+    font-size: 14px;
+    background-color: white;
+    color: #d2287b;
+    border-radius: 50% 50%;
+    display: inline-block;
+    width: 28px;
+    height: 28px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\0000348}}
+    .album-header-container .album-song-button:hover {
+      cursor: pointer;
+      color: white;
+      background-color: #d2287b; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\0000354}}
+    .album-header-container .album-song-button i {
+      line-height: 28px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\0000358}}
+    .album-header-container .album-song-button .fa-play {
+      padding-left: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\0000363}}
+  .album-header-container .album-song-listening td {
+    vertical-align: middle; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\0000367}}
+  .album-header-container td.song-number {
+    padding: 0;
+    height: 70px;
+    text-align: center; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000373}}
-.album-header-information {
-  margin-top: 45px;
-  margin-bottom: 20px; }
-
-@media -sass-debug-info{filename{}line{font-family:\0000379}}
-.album-header-information h3, .album-header-information h4, .album-header-information h5 {
-  line-height: 150%; }
-
-@media -sass-debug-info{filename{}line{font-family:\0000385}}
-.album-header-information h3 {
-  font-size: 48px;
-  font-weight: 300; }
-
-@media -sass-debug-info{filename{}line{font-family:\0000390}}
-.album-header-information h4 {
-  font-size: 24px;
-  font-weight: 700; }
-
-@media -sass-debug-info{filename{}line{font-family:\0000395}}
-.album-header-information h5 {
-  font-size: 16px;
-  font-weight: 500; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003101}}
-.table.album-song-listening {
-  font-weight: 300; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003106}}
-.table.album-song-listening td {
-  padding: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.4); }
-
-@media -sass-debug-info{filename{}line{font-family:\00003112}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_collection\.scss}line{font-family:\000031}}
 .collection-album-container {
   margin-top: 30px;
   margin-bottom: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_collection\.scss}line{font-family:\000035}}
+  .collection-album-container .caption {
+    margin-top: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_collection\.scss}line{font-family:\000038}}
+    .collection-album-container .caption p {
+      font-size: 16px;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.6); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_collection\.scss}line{font-family:\0000313}}
+      .collection-album-container .caption p a {
+        color: rgba(255, 255, 255, 0.6); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_collection\.scss}line{font-family:\0000316}}
+      .collection-album-container .caption p a.album-name {
+        color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_collection\.scss}line{font-family:\0000322}}
+  .collection-album-container img {
+    max-width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_collection\.scss}line{font-family:\0000326}}
+  .collection-album-container .collection-album-image-container {
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_collection\.scss}line{font-family:\0000330}}
+  .collection-album-container .collection-album-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_collection\.scss}line{font-family:\0000340}}
+  .collection-album-container .collection-overlay-content {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_collection\.scss}line{font-family:\0000347}}
+  .collection-album-container .collection-overlay-button {
+    font-size: 20px;
+    background-color: white;
+    color: #d2287b;
+    border-radius: 50% 50%;
+    display: inline-block;
+    width: 42px;
+    height: 42px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_collection\.scss}line{font-family:\0000356}}
+    .collection-album-container .collection-overlay-button:hover {
+      cursor: pointer;
+      color: white;
+      background-color: #d2287b; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_collection\.scss}line{font-family:\0000361}}
+    .collection-album-container .collection-overlay-button i {
+      line-height: 42px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_collection\.scss}line{font-family:\0000364}}
+    .collection-album-container .collection-overlay-button .fa-play {
+      padding-left: 5px; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003117}}
-.collection-album-container .caption {
-  margin-top: 10px; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003121}}
-.collection-album-container .caption p {
-  font-size: 16px;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.6); }
-
-@media -sass-debug-info{filename{}line{font-family:\00003127}}
-.collection-album-container .caption p a {
-  color: rgba(255, 255, 255, 0.6); }
-
-@media -sass-debug-info{filename{}line{font-family:\00003131}}
-.collection-album-container .caption p a.album-name {
-  color: white; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003135}}
-.collection-album-container img {
-  max-width: 100%; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003139}}
-.collection-album-container .collection-album-image-container {
-  position: relative; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003143}}
-.collection-album-container .collection-album-image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 10; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003153}}
-.collection-album-container .collection-overlay-content {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  text-align: center; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003160}}
-.collection-album-container .collection-overlay-button {
-  font-size: 20px;
-  background-color: white;
-  color: #d2287b;
-  border-radius: 50% 50%;
-  display: inline-block;
-  width: 42px;
-  height: 42px; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003170}}
-.collection-album-container .collection-overlay-button:hover {
-  cursor: pointer;
-  color: white;
-  background-color: #d2287b; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003176}}
-.collection-album-container .collection-overlay-button i {
-  line-height: 42px; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003180}}
-.collection-album-container .collection-overlay-button .fa-play {
-  padding-left: 5px; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003184}}
-.album-song-button {
-  text-align: center;
-  font-size: 14px;
-  background-color: white;
-  color: #d2287b;
-  border-radius: 50% 50%;
-  display: inline-block;
-  width: 28px;
-  height: 28px; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003195}}
-.album-song-button:hover {
-  cursor: pointer;
-  color: white;
-  background-color: #d2287b; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003201}}
-.album-song-button i {
-  line-height: 28px; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003205}}
-.album-song-button .fa-play {
-  padding-left: 5px; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003209}}
-.album-song-listening td {
-  vertical-align: middle; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003213}}
-td.song-number {
-  padding: 0;
-  height: 70px;
-  text-align: center; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003219}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\000031}}
 .player-bar {
   position: fixed;
   bottom: 0;
@@ -212,157 +156,155 @@ td.song-number {
   height: 150px;
   background: rgba(255, 255, 255, 0.3);
   z-index: 100; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\0000322}}
+  .player-bar a, .player-bar a:hover {
+    color: white;
+    cursor: pointer;
+    text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\0000328}}
+  .player-bar .container {
+    display: table;
+    padding: 0;
+    min-height: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\0000334}}
+  .player-bar .left-controls {
+    width: 25%;
+    text-align: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\0000339}}
+  .player-bar .right-controls {
+    width: 25%;
+    text-align: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\0000345}}
+  .player-bar .play-controls a {
+    font-size: 20px;
+    vertical-align: middle; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\0000350}}
+  .player-bar .play-controls .previous {
+    margin-right: 65px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\0000354}}
+  .player-bar .play-controls .play-pause {
+    margin-right: 60px;
+    font-size: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\0000360}}
+  .player-bar .currently-playing {
+    width: 50%;
+    text-align: center;
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\0000365}}
+    .player-bar .currently-playing .song-name, .player-bar .currently-playing .artist-name {
+      text-align: center;
+      margin: 0;
+      position: absolute;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 300; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\0000373}}
+    .player-bar .currently-playing .song-name {
+      top: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\0000376}}
+    .player-bar .currently-playing .artist-name {
+      bottom: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\0000381}}
+  .player-bar .queue-toggle {
+    display: inline-block;
+    margin-left: 75px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\0000385}}
+    .player-bar .queue-toggle i {
+      font-size: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\0000390}}
+  .player-bar .volume {
+    display: inline-block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\0000393}}
+    .player-bar .volume i {
+      width: 40px;
+      font-size: 20px;
+      display: inline-block;
+      vertical-align: middle; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\00003100}}
+    .player-bar .volume .seek-bar {
+      display: inline-block;
+      width: 100px;
+      vertical-align: middle; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003230}}
-.player-bar a, .player-bar a:hover {
-  color: white;
-  cursor: pointer;
-  text-decoration: none; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003237}}
-.player-bar .container {
-  display: table;
-  padding: 0;
-  min-height: 100%; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003243}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\00003108}}
 .player-bar-control-group {
   display: table-cell;
   vertical-align: middle; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003248}}
-.player-bar .left-controls {
-  width: 25%;
-  text-align: left; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003253}}
-.player-bar .right-controls {
-  width: 25%;
-  text-align: right; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003258}}
-.player-bar .play-controls a {
-  font-size: 20px;
-  vertical-align: middle; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003263}}
-.player-bar .play-controls .previous {
-  margin-right: 65px; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003267}}
-.player-bar .play-controls .play-pause {
-  margin-right: 60px;
-  font-size: 30px; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003272}}
-.player-bar .play-controls .fa {
-  -webkit-transition: all 300ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
-  transition: all 300ms cubic-bezier(0.55, 0.085, 0.68, 0.53); }
-
-@media -sass-debug-info{filename{}line{font-family:\00003277}}
-.player-bar .play-controls .fa:hover {
-  color: rgba(255, 255, 255, 0.1); }
-
-@media -sass-debug-info{filename{}line{font-family:\00003281}}
-.player-bar .currently-playing {
-  width: 50%;
-  text-align: center;
-  position: relative; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003287}}
-.player-bar .currently-playing .song-name,
-.player-bar .currently-playing .artist-name {
-  text-align: center;
-  font-size: 12px;
-  margin: 0;
-  position: absolute;
-  width: 100%;
-  font-weight: 300; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003298}}
-.player-bar .currently-playing .song-name {
-  top: 20px; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003302}}
-.player-bar .currently-playing .artist-name {
-  bottom: 20px; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003306}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\00003113}}
 .seek-control {
   position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\00003116}}
+  .seek-control .current-time {
+    position: absolute;
+    top: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\00003120}}
+  .seek-control .total-time {
+    position: absolute;
+    right: 0;
+    top: 10px; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003310}}
-.seek-control .current-time {
-  position: absolute;
-  top: 10px; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003315}}
-.seek-control .total-time {
-  position: absolute;
-  right: 0;
-  top: 10px; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\00003127}}
 .seek-bar {
   height: 5px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 2px;
   position: relative;
   cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\00003134}}
+  .seek-bar .fill {
+    background: white;
+    width: 36%;
+    height: 5px;
+    border-radius: 2px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\00003141}}
+  .seek-bar .thumb {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background: white;
+    left: 36%;
+    margin-left: -5px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 100ms ease-in-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\00003156}}
+  .seek-bar.no-animate .fill, .seek-bar.no-animate .thumb {
+    transition: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\00003161}}
+  .seek-bar:hover .thumb {
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003329}}
-.seek-bar .fill {
-  background: white;
-  width: 36%;
-  height: 5px;
-  border-radius: 2px; }
+@media -sass-debug-info{filename{}line{font-family:\0000311}}
+html {
+  height: 100%; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003336}}
-.seek-bar .thumb {
-  position: absolute;
-  height: 10px;
-  width: 10px;
-  background: white;
-  left: 36%;
-  margin-left: -5px;
-  top: 50%;
-  margin-top: -5px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 100ms ease-in-out; }
+@media -sass-debug-info{filename{}line{font-family:\0000315}}
+body {
+  background: -webkit-radial-gradient(#2b1339, #380c77);
+  background: radial-gradient(#2b1339, #380c77);
+  font-family: 'Open Sans';
+  color: white;
+  min-height: 100%;
+  padding-bottom: 150px; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003350}}
-.seek-bar:hover .thumb {
-  width: 20px;
-  height: 20px;
-  margin-top: -10px;
-  margin-left: -10px; }
+@media -sass-debug-info{filename{}line{font-family:\0000327}}
+body.landing {
+  background: #5B5579;
+  padding-bottom: 0; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003357}}
-.player-bar .queue-toggle {
-  display: inline-block;
-  margin-left: 75px; }
+@media -sass-debug-info{filename{}line{font-family:\0000334}}
+body.landing .navbar {
+  margin-bottom: 0; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003362}}
-.player-bar .queue-toggle i {
-  font-size: 20px; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003366}}
-.player-bar .volume {
-  display: inline-block; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003370}}
-.player-bar .volume i {
-  width: 40px;
-  font-size: 20px;
-  display: inline-block;
-  vertical-align: middle; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003376}}
-.player-bar .volume .seek-bar {
-  display: inline-block;
-  width: 100px;
-  vertical-align: middle; }
+@media -sass-debug-info{filename{}line{font-family:\0000338}}
+.player-header-nav {
+  background-color: rgba(123, 70, 163, 0.9); }
 
 
 /*# sourceMappingURL=app.css.map*/
