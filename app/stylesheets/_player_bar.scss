@@ -4,13 +4,6 @@
   $player_fontsize_lg: 30px;
   $player_fontsize_sm: 16px;
 
-  @mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
-  }
-
   position: fixed;
   bottom: 0;
   left: 0;
@@ -127,7 +120,7 @@
 .seek-bar {
   height: 5px;
   background: rgba(255, 255, 255, 0.3);
-  @include border-radius(2px);
+  border-radius: 2px;
   position: relative;
   cursor: pointer;
 
@@ -135,7 +128,7 @@
     background: white;
     width: 36%;
     height: 5px;
-    @include border-radius(2px);
+    border-radius: 2px;
   }
 
   .thumb {
