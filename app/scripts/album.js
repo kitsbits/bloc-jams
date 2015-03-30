@@ -163,7 +163,7 @@ var setupSeekBars = function() {
      });
 
     //cleanup
-    $(document).bind('mouseup.thumb', function(){
+    $(document).bind('mouseup', function(){
       $seekBar.removeClass('no-animate');
       
       $(document).unbind('mousemove.thumb');
@@ -174,7 +174,11 @@ var setupSeekBars = function() {
 };
 
 
-
+var mouseXY = function() {
+  $(document).on('mousemove', function(event){
+    console.log(event.pageX, event.pageY);
+  });
+};
 
 // This 'if' condition is used to prevent the jQuery modifications
 // from happening on non-Album view pages.
@@ -184,5 +188,6 @@ if (document.URL.match(/\/album.html/)) {
   $(document).ready(function() {
     changeAlbumview(albumPicasso);
     setupSeekBars();
+    mouseXY();
   });
 };

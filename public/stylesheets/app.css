@@ -1,31 +1,27 @@
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_landing\.scss}line{font-family:\000031}}
 .hero-content {
-  background: #2F1D57;
-  padding: 100px 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_landing\.scss}line{font-family:\000035}}
+  background-color: #2F1D57;
+  padding: 100px 0;
+  background: #2F1D57; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_landing\.scss}line{font-family:\000036}}
   .hero-content h1 {
     font-size: 70px;
     margin-bottom: 50px;
     font-weight: 300; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_landing\.scss}line{font-family:\0000311}}
-  .hero-content .selling-points {
-    padding: 100px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_landing\.scss}line{font-family:\0000314}}
-    .hero-content .selling-points .point {
-      width: 32%;
-      float: left;
-      padding: 0 0.5%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_landing\.scss}line{font-family:\0000319}}
-      .hero-content .selling-points .point h5 {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 20px;
-        text-align: center;
-        height: 85px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_landing\.scss}line{font-family:\0000327}}
-      .hero-content .selling-points .point p {
-        font-size: 14px;
-        padding: 100px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_landing\.scss}line{font-family:\0000313}}
+.selling-points {
+  padding: 100px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_landing\.scss}line{font-family:\0000317}}
+  .selling-points .point h5 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 85px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_landing\.scss}line{font-family:\0000325}}
+  .selling-points .point p {
+    font-size: 14px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\000031}}
 .album-header-container {
