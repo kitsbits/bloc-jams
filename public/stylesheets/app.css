@@ -276,11 +276,102 @@
     margin-top: -10px;
     margin-left: -10px; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_buttons\.scss}line{font-family:\000031}}
+.default-button {
+  background-color: #D2287B !important;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  outline: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_buttons\.scss}line{font-family:\0000312}}
+  .default-button:active {
+    background-color: #9B1D64;
+    outline: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_buttons\.scss}line{font-family:\0000317}}
+  .default-button:disabled {
+    background-color: #B3B3B3;
+    cursor: not-allowed; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_profile\.scss}line{font-family:\000033}}
+.user-profile-header {
+  border: none;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_profile\.scss}line{font-family:\000039}}
+.user-image-container {
+  display: inline-block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_profile\.scss}line{font-family:\0000314}}
+.tab-content.user-subscription .well {
+  background: transparent;
+  border: #D2287B 2px solid; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_profile\.scss}line{font-family:\0000319}}
+.tab-content.user-subscription .subsection-label {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: white;
+  font-weight: 300; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_profile\.scss}line{font-family:\0000327}}
+.tab-content.user-subscription .table.credit-card-list td {
+  border-top-color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  font-size: 16px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_profile\.scss}line{font-family:\0000333}}
+.tab-content.user-subscription .fa-minus-circle {
+  color: #D2287B; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_profile\.scss}line{font-family:\0000338}}
+.user-profile-tabs-container {
+  margin: 42px auto 20px;
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_profile\.scss}line{font-family:\0000342}}
+  .user-profile-tabs-container .pagination.profile-pagination {
+    font-weight: 700;
+    border: #D2287B 2px solid;
+    border-radius: 8px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_profile\.scss}line{font-family:\0000347}}
+    .user-profile-tabs-container .pagination.profile-pagination > li > a {
+      border: none;
+      background-color: transparent;
+      color: white;
+      letter-spacing: 2px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_profile\.scss}line{font-family:\0000354}}
+    .user-profile-tabs-container .pagination.profile-pagination > .active > a {
+      background-color: #D2287B;
+      border-radius: 4px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_profile\.scss}line{font-family:\0000363}}
+.default-form label {
+  font-weight: 300;
+  font-size: 16px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_profile\.scss}line{font-family:\0000367}}
+.default-form input {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0;
+  border: none;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 10px 12px 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_profile\.scss}line{font-family:\0000377}}
+.no-left-gutter {
+  padding-left: 0px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_profile\.scss}line{font-family:\0000381}}
+.no-right-gutter {
+  padding-right: 0px; }
+
+@media -sass-debug-info{filename{}line{font-family:\0000313}}
 html {
   height: 100%; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000315}}
+@media -sass-debug-info{filename{}line{font-family:\0000317}}
 body {
   background: -webkit-radial-gradient(#2b1339, #380c77);
   background: radial-gradient(#2b1339, #380c77);
@@ -289,16 +380,16 @@ body {
   min-height: 100%;
   padding-bottom: 150px; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000327}}
+@media -sass-debug-info{filename{}line{font-family:\0000329}}
 body.landing {
   background: #5B5579;
   padding-bottom: 0; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000334}}
+@media -sass-debug-info{filename{}line{font-family:\0000336}}
 body.landing .navbar {
   margin-bottom: 0; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000338}}
+@media -sass-debug-info{filename{}line{font-family:\0000340}}
 .player-header-nav {
   background-color: rgba(123, 70, 163, 0.9); }
 

@@ -2,6 +2,8 @@
 @import "album";
 @import "collection";
 @import "player_bar";
+@import "buttons";
+@import "profile";
 
 @mixin background-gradient($first_color, $second_color) {
   background: -webkit-radial-gradient(  $first_color, $second_color);
