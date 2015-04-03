@@ -14,6 +14,5 @@ var selectTabHandler = function(event) {
    $(document).ready(function() {
      var $tabs = $(tabsContainer + " a");
      $tabs.click(selectTabHandler);
-     $tabs[0].click();
    });
  }
