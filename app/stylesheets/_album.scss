@@ -25,14 +25,14 @@
       font-weight: 500;
     }
   }
+}
 
-  .table.album-song-listening {
-    font-weight: 300;
+table {
+  font-weight: 300;
 
-    td {
-      padding: 20px;
-      border-top: 1px solid rgba(255,255,255,0.4);
-    }
+  td {
+    padding: 20px;
+    border-top: 1px solid rgba(255,255,255,0.4);
   }
 
   .album-song-button {

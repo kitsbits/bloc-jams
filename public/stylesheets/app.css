@@ -46,15 +46,16 @@
     .album-header-container .album-header-information h5 {
       font-size: 16px;
       font-weight: 500; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\0000329}}
-  .album-header-container .table.album-song-listening {
-    font-weight: 300; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\0000332}}
-    .album-header-container .table.album-song-listening td {
-      padding: 20px;
-      border-top: 1px solid rgba(255, 255, 255, 0.4); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\0000330}}
+table {
+  font-weight: 300; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\0000333}}
+  table td {
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4); }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\0000338}}
-  .album-header-container .album-song-button {
+  table .album-song-button {
     text-align: center;
     font-size: 14px;
     background-color: white;
@@ -64,21 +65,21 @@
     width: 28px;
     height: 28px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\0000348}}
-    .album-header-container .album-song-button:hover {
+    table .album-song-button:hover {
       cursor: pointer;
       color: white;
       background-color: #d2287b; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\0000354}}
-    .album-header-container .album-song-button i {
+    table .album-song-button i {
       line-height: 28px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\0000358}}
-    .album-header-container .album-song-button .fa-play {
+    table .album-song-button .fa-play {
       padding-left: 5px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\0000363}}
-  .album-header-container .album-song-listening td {
+  table .album-song-listening td {
     vertical-align: middle; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\0000367}}
-  .album-header-container td.song-number {
+  table td.song-number {
     padding: 0;
     height: 70px;
     text-align: center; }
@@ -278,7 +279,7 @@
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_buttons\.scss}line{font-family:\000031}}
 .default-button {
-  background-color: #D2287B !important;
+  background-color: #D2287B;
   color: white;
   font-weight: 700;
   border-radius: 5px;
@@ -392,6 +393,16 @@ body.landing .navbar {
 @media -sass-debug-info{filename{}line{font-family:\0000340}}
 .player-header-nav {
   background-color: rgba(123, 70, 163, 0.9); }
+@media -sass-debug-info{filename{}line{font-family:\0000344}}
+  .player-header-nav .navbar-nav a {
+    line-height: 45px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.2; }
+@media -sass-debug-info{filename{}line{font-family:\0000351}}
+    .player-header-nav .navbar-nav a:hover {
+      color: rgba(123, 70, 163, 0.9); }
 
 
 /*# sourceMappingURL=app.css.map*/
