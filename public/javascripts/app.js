@@ -301,15 +301,15 @@ blocJams.config(['$stateProvider', '$locationProvider', function($stateProvider,
   $locationProvider.html5Mode(true);
 
   $stateProvider.state('landing', {
-   url: '/',
-   controller: 'Landing.controller',
-   templateUrl: '/templates/landing.html'
+    url: '/',
+    controller: 'Landing.controller',
+    templateUrl: '/templates/landing.html'
   });
 
   $stateProvider.state('collection', {
-   url: '/collection',
-   controller: 'Collection.controller',
-   templateUrl: '/templates/collection.html'
+    url: '/collection',
+    controller: 'Collection.controller',
+    templateUrl: '/templates/collection.html'
   });
 
   $stateProvider.state('album', {
