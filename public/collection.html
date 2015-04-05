@@ -15,17 +15,23 @@
     </script>
   </head>
 
-  <body class="collection">
+  <body>
     
-    <nav class="player-header-nav navbar">
+    <nav class="player-head-nav navbar">
       <div class="container">
         <div class="navbar-header"> <!-- Nav Bar -->
-          <a class="logo navbar-left">
+          <a ui-sref="collection" class="logo navbar-left">
             <img src="images/blocjams.png">
           </a>
         </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a ui-sref='collection'>Library</a></li>
+        </ul>
       </div>
     </nav>
+    <!-- render templates here -->
+    <div ui-view="collection"></div>
+    <div ui-view="player_bar"></div>
 
   </body>
 </html>
