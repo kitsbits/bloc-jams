@@ -96,7 +96,7 @@ blocJams.controller('Album.controller', ['$scope', 'SongPlayer', function($scope
   };
 
   $scope.getSongState = function(song) {
-    if (song === SongPlayer.currentsong && SongPlayer.playing) {
+    if (song === SongPlayer.currentSong && SongPlayer.playing) {
       return 'playing';
   }
     else if (song === hoveredSong) {
@@ -106,7 +106,7 @@ blocJams.controller('Album.controller', ['$scope', 'SongPlayer', function($scope
   };
 
   $scope.playSong = function(song) {
-    SongPlayer.setSong($scope.album.song);
+    SongPlayer.setSong($scope.album, song);
     SongPlayer.play();
   };
 
