@@ -80,6 +80,7 @@ blocJams.controller('Collection.controller', ['$scope', function($scope) {
    for (var i = 0; i < 33; i++) {
      $scope.albums.push(angular.copy(albumPicasso));
    }
+
 }]);
 
 blocJams.controller('Album.controller', ['$scope', 'SongPlayer', function($scope, SongPlayer) {
@@ -118,6 +119,7 @@ blocJams.controller('Album.controller', ['$scope', 'SongPlayer', function($scope
 
 blocJams.controller('PlayerBar.controller', ['$scope', 'SongPlayer', function($scope, SongPlayer) {
   $scope.songPlayer = SongPlayer;
+
 }]);
 
  blocJams.service('SongPlayer', function() {
@@ -138,3 +140,11 @@ blocJams.controller('PlayerBar.controller', ['$scope', 'SongPlayer', function($s
      }
    };
  });
+
+blocJams.service('ConsoleLogger', function() {
+  return {
+    log: function() {
+      console.log();
+    }
+  };
+});
