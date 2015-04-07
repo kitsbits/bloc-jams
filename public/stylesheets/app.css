@@ -218,7 +218,7 @@ table {
       display: inline-block;
       vertical-align: middle; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\0000393}}
-    .player-bar .volume .seek-bar {
+    .player-bar .volume .slider {
       display: inline-block;
       width: 100px;
       vertical-align: middle; }
@@ -242,20 +242,20 @@ table {
     top: 10px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\00003120}}
-.seek-bar {
+.slider {
   height: 5px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 2px;
   position: relative;
   cursor: pointer; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\00003127}}
-  .seek-bar .fill {
+  .slider .fill {
     background: white;
     width: 36%;
     height: 5px;
     border-radius: 2px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\00003134}}
-  .seek-bar .thumb {
+  .slider .thumb {
     position: absolute;
     height: 10px;
     width: 10px;
@@ -268,10 +268,10 @@ table {
     cursor: pointer;
     transition: all 100ms ease-in-out; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\00003149}}
-  .seek-bar.no-animate .fill, .seek-bar.no-animate .thumb {
+  .slider.no-animate .fill, .slider.no-animate .thumb {
     transition: none; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\00003154}}
-  .seek-bar:hover .thumb {
+  .slider:hover .thumb {
     width: 20px;
     height: 20px;
     margin-top: -10px;
