@@ -268,10 +268,10 @@ table {
     cursor: pointer;
     transition: all 100ms ease-in-out; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\00003149}}
-  .slider.no-animate .fill, .slider.no-animate .thumb {
+  .slider:active .fill, .slider:active .thumb {
     transition: none; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_player_bar\.scss}line{font-family:\00003154}}
-  .slider:hover .thumb {
+  .slider:hover .thumb, .slider:active .thumb {
     width: 20px;
     height: 20px;
     margin-top: -10px;
