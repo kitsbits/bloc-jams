@@ -397,70 +397,85 @@ blocJams.controller('Album.controller', ['$scope', 'SongPlayer', function($scope
 blocJams.controller('PlayerBar.controller', ['$scope', 'SongPlayer', function($scope, SongPlayer) {
   $scope.songPlayer = SongPlayer;
 
+  SongPlayer.onTimeUpdate(function(event, time){
+   $scope.$apply(function(){
+     $scope.playTime = time;
+   });
+  });
+
 }]);
 
- blocJams.service('SongPlayer', function() {
-  var currentSoundFile = null;
-
-  var trackIndex = function(album, song) {
-     return album.songs.indexOf(song);
-   };
-
-   return {
-    currentSong: null,
-    currentAlbum: null,
-    playing: false,
-
-    play: function() {
-      this.playing = true;
-      currentSoundFile.play();
-    },
-    pause: function() {
-      this.playing = false;
-      currentSoundFile.pause();
-    },
-    next: function() {
-     var currentTrackIndex = trackIndex(this.currentAlbum, this.currentSong);
-     currentTrackIndex++;
-     if (currentTrackIndex >= this.currentAlbum.songs.length) {
-       currentTrackIndex = 0;
-     }
-
+ blocJams.service('SongPlayer', ['$rootScope', function($rootScope) {
+   var currentSoundFile = null;
+ 
+   var trackIndex = function(album, song) {
+      return album.songs.indexOf(song);
+    };
+ 
+    return {
+     currentSong: null,
+     currentAlbum: null,
+     playing: false,
+ 
+     play: function() {
+       this.playing = true;
+       currentSoundFile.play();
+     },
+     pause: function() {
+       this.playing = false;
+       currentSoundFile.pause();
+     },
+     next: function() {
+      var currentTrackIndex = trackIndex(this.currentAlbum, this.currentSong);
+      currentTrackIndex++;
+      if (currentTrackIndex >= this.currentAlbum.songs.length) {
+        currentTrackIndex = 0;
+      }
+ 
+      var song = this.currentAlbum.songs[currentTrackIndex];
+      this.setSong(this.currentAlbum, song);
+     },
+     previous: function() {
+      var currentTrackIndex = trackIndex(this.currentAlbum, this.currentSong);
+      currentTrackIndex--;
+      if (currentTrackIndex < 0) {
+        currentTrackIndex = this.currentAlbum.songs.length - 1;
+      }
+ 
      var song = this.currentAlbum.songs[currentTrackIndex];
      this.setSong(this.currentAlbum, song);
-    },
-    previous: function() {
-     var currentTrackIndex = trackIndex(this.currentAlbum, this.currentSong);
-     currentTrackIndex--;
-     if (currentTrackIndex < 0) {
-       currentTrackIndex = this.currentAlbum.songs.length - 1;
-     }
+     },
+ 
+     seek: function(time) {
+       if(currentSoundFile) {
+         currentSoundFile.setTime(time);
+       }
+     },
 
-    var song = this.currentAlbum.songs[currentTrackIndex];
-    this.setSong(this.currentAlbum, song);
-    },
+      onTimeUpdate: function(callback) {
+        return $rootScope.$on('sound:timeupdate', callback);
+      },
+ 
+     setSong: function(album, song) {
+       if (currentSoundFile) {
+         currentSoundFile.stop();
+       }
+       this.currentAlbum = album;
+       this.currentSong = song;
 
-    seek: function(time) {
-      if(currentSoundFile) {
-        currentSoundFile.setTime(time);
-      }
-    },
+       currentSoundFile = new buzz.sound(song.audioUrl, {
+         formats: [ "mp3" ],
+         preload: true
+       });
 
-    setSong: function(album, song) {
-      if (currentSoundFile) {
-        currentSoundFile.stop();
-      }
-      this.currentAlbum = album;
-      this.currentSong = song;
-      currentSoundFile = new buzz.sound(song.audioUrl, {
-        formats: [ "mp3" ],
-        preload: true
+      currentSoundFile.bind('timeupdate', function(e){
+        $rootScope.$broadcast('sound:timeupdate', this.getTime());
       });
-
-      this.play();
-    }
+ 
+       this.play();
+     }
    };
- });
+  }]);
 
 blocJams.directive('slider', ['$document', function($document) {
 
@@ -556,6 +571,35 @@ blocJams.directive('slider', ['$document', function($document) {
   };
 
 }]);
+
+ blocJams.filter('timecode', function(){
+   return function(seconds) {
+     seconds = Number.parseFloat(seconds);
+ 
+     // Returned when no time is provided.
+     if (Number.isNaN(seconds)) {
+       return '-:--';
+     }
+ 
+     // make it a whole number
+     var wholeSeconds = Math.floor(seconds);
+ 
+     var minutes = Math.floor(wholeSeconds / 60);
+ 
+     remainingSeconds = wholeSeconds % 60;
+ 
+     var output = minutes + ':';
+ 
+     // zero pad seconds, so 9 seconds should be :09
+     if (remainingSeconds < 10) {
+       output += '0';
+     }
+ 
+     output += remainingSeconds;
+ 
+     return output;
+   }
+ })
 });
 
 ;require.register("scripts/collection", function(exports, require, module) {
