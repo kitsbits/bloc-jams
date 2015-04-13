@@ -28,9 +28,9 @@
 
     <div class="right-controls play-bar-control-group">
       <div class="volume">
-        <i class="fa fa-volume-up"></i>
+        <i class="fa" ng-class="volumeClass()" ng-controller="PlayerBar.controller" ng-click="mute()"></i>
 
-      <slider></slider>
+        <slider value="{{songPlayer.volume}}" max="100" on-change="songPlayer.setVolume(value)"></slider>
       
       </div>
 
@@ -39,6 +39,7 @@
           <i class="fa fa-list-ul"></i>
         </a>
       </div>
+
     </div>
   </div>
 </div>

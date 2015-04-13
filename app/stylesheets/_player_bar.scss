@@ -84,10 +84,11 @@
     display: inline-block;
 
     i {
-      width: 40px;
+      width: 20px;
       font-size: $player_fontsize_reg;
       display: inline-block;
       vertical-align: middle;
+      text-align: left;
     }
 
     .slider {

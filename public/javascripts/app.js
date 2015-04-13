@@ -397,6 +397,40 @@ blocJams.controller('Album.controller', ['$scope', 'SongPlayer', function($scope
 blocJams.controller('PlayerBar.controller', ['$scope', 'SongPlayer', function($scope, SongPlayer) {
   $scope.songPlayer = SongPlayer;
 
+  $scope.volumeClass = function() {
+    return {
+      'fa-volume-off': SongPlayer.volume == 0,
+      'fa-volume-down': SongPlayer.volume <= 70 && SongPlayer.volume > 0,
+      'fa-volume-up': SongPlayer.volume > 70
+    }
+  };
+
+  var storeVolume = [];
+
+  $scope.mute = function() {
+    storeVolume.push(SongPlayer.volume);
+    //alert(storeVolume);
+
+    if (SongPlayer.muted == false && SongPlayer.volume != 0) {
+      SongPlayer.setVolume(0);
+      return(SongPlayer.muted = true);
+    }
+
+    if (SongPlayer.muted == true) {
+      SongPlayer.setVolume(storeVolume[storeVolume.length - 2]);
+      storeVolume.length = 0;
+      return(SongPlayer.muted = false);
+    }
+
+    if (SongPlayer.volume > 0) {
+      return(SongPlayer.muted = false);
+    }
+
+    if (SongPlayer.volume == 0 && SongPlayer.muted == false) {
+      SongPlayer.setVolume(90);
+    }
+  };
+
   SongPlayer.onTimeUpdate(function(event, time){
    $scope.$apply(function(){
      $scope.playTime = time;
@@ -404,6 +438,7 @@ blocJams.controller('PlayerBar.controller', ['$scope', 'SongPlayer', function($s
   });
 
 }]);
+
 
  blocJams.service('SongPlayer', ['$rootScope', function($rootScope) {
    var currentSoundFile = null;
@@ -416,6 +451,8 @@ blocJams.controller('PlayerBar.controller', ['$scope', 'SongPlayer', function($s
      currentSong: null,
      currentAlbum: null,
      playing: false,
+     volume: 90,
+     muted: false,
  
      play: function() {
        this.playing = true;
@@ -452,11 +489,18 @@ blocJams.controller('PlayerBar.controller', ['$scope', 'SongPlayer', function($s
        }
      },
 
-      onTimeUpdate: function(callback) {
-        return $rootScope.$on('sound:timeupdate', callback);
-      },
+     setVolume: function(volume) {
+      if(currentSoundFile) {
+        currentSoundFile.setVolume(volume);
+      }
+      this.volume = volume;
+     },
+
+    onTimeUpdate: function(callback) {
+      return $rootScope.$on('sound:timeupdate', callback);
+    },
  
-     setSong: function(album, song) {
+    setSong: function(album, song) {
        if (currentSoundFile) {
          currentSoundFile.stop();
        }
