@@ -21,8 +21,37 @@
     height: 85px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_landing\.scss}line{font-family:\0000325}}
   .selling-points .point p {
-    font-size: 14px; }
+    font-size: 16px; }
 
+@media screen and (max-width: 768px) {
+  /* landing page, global styles */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_mobile\.scss}line{font-family:\000036}}
+  .player-header-nav.navbar .navbar-nav li {
+    text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_mobile\.scss}line{font-family:\0000313}}
+  .hero-content h1, .hero-content h3 {
+    text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_mobile\.scss}line{font-family:\0000318}}
+  .selling-points {
+    padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_mobile\.scss}line{font-family:\0000320}}
+    .selling-points .point {
+      padding: 1.25em 0.75em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_mobile\.scss}line{font-family:\0000322}}
+      .selling-points .point h5 {
+        height: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_mobile\.scss}line{font-family:\0000325}}
+      .selling-points .point p {
+        text-align: center;
+        font-size: 1.25em;
+        padding: 0.25em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_mobile\.scss}line{font-family:\0000333}}
+  .landing-album-list {
+    position: relative;
+    left: calc(50% - 200px); } }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_album\.scss}line{font-family:\000031}}
 .album-header-container {
   margin-top: 55px;
@@ -369,11 +398,11 @@ table {
 .no-right-gutter {
   padding-right: 0px; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000313}}
+@media -sass-debug-info{filename{}line{font-family:\0000314}}
 html {
   height: 100%; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000317}}
+@media -sass-debug-info{filename{}line{font-family:\0000318}}
 body {
   background: -webkit-radial-gradient(#2b1339, #380c77);
   background: radial-gradient(#2b1339, #380c77);
@@ -382,26 +411,26 @@ body {
   min-height: 100%;
   padding-bottom: 150px; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000329}}
+@media -sass-debug-info{filename{}line{font-family:\0000330}}
 body.landing {
   background: #5B5579;
   padding-bottom: 0; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000336}}
+@media -sass-debug-info{filename{}line{font-family:\0000337}}
 body.landing .navbar {
   margin-bottom: 0; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000340}}
+@media -sass-debug-info{filename{}line{font-family:\0000341}}
 .player-header-nav {
   background-color: rgba(123, 70, 163, 0.9); }
-@media -sass-debug-info{filename{}line{font-family:\0000344}}
+@media -sass-debug-info{filename{}line{font-family:\0000345}}
   .player-header-nav .navbar-nav a {
     line-height: 45px;
     color: white;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1.2; }
-@media -sass-debug-info{filename{}line{font-family:\0000351}}
+@media -sass-debug-info{filename{}line{font-family:\0000352}}
     .player-header-nav .navbar-nav a:hover {
       color: rgba(123, 70, 163, 0.9); }
 

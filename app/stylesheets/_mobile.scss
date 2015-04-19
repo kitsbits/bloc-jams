@@ -1,0 +1,40 @@
+@media screen and (max-width: 768px;) {
+
+  /* landing page, global styles */
+  .player-header-nav.navbar {
+    .navbar-nav {
+      li {
+        text-align: center;
+      }
+    }
+  }
+
+  .hero-content {
+    h1, h3 {
+      text-align: center;
+    }
+  }
+
+  .selling-points {
+    padding: 0;
+    .point {
+      padding: 1.25em 0.75em;
+      h5 {
+        height: 1em;
+      }
+      p {
+        text-align: center;
+        font-size: 1.25em;
+        padding: 0.25em;
+      }
+    }
+  }
+
+  .landing-album-list {
+    /* Example class added to style the album covers for mobile */
+    .album-cover {
+      position: relative;
+      left: calc(50% - 200px);
+    }
+  }
+}
