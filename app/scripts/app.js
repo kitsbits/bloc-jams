@@ -19,8 +19,7 @@ var albumPicasso = {
    ]
 };
 
-blocJams = angular.module('BlocJams', ['ui.router']);
-blocJamsMobile = angular.module('BlocJamsMobile', ['blocJams', 'ui.bootstrap']);
+blocJams = angular.module('BlocJams', ['ui.router', 'ui.bootstrap']);
 
 
 blocJams.config(['$stateProvider', '$locationProvider', function($stateProvider, $locationProvider) {
