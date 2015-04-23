@@ -294,8 +294,8 @@ var albumPicasso = {
    ]
 };
 
-blocJams = angular.module('BlocJams', ['ui.router']);
-blocJamsMobile = angular.module('BlocJamsMobile', ['blocJams', 'ui.bootstrap']);
+blocJams = angular.module('BlocJams', ['ui.router', 'ui.bootstrap']);
+
 
 
 blocJams.config(['$stateProvider', '$locationProvider', function($stateProvider, $locationProvider) {
@@ -320,7 +320,12 @@ blocJams.config(['$stateProvider', '$locationProvider', function($stateProvider,
   });
 }]);
 
+blocJams.controller('NavCtrl', ['$scope', function($scope) {
+  $scope.isCollapsed = true;
+}]);
+
 blocJams.controller('Landing.controller', ['$scope', function($scope) {
+  
   $scope.heading = "Block Jams";
 
   $scope.subText = "Turn the music up!";
@@ -352,6 +357,7 @@ blocJams.controller('Landing.controller', ['$scope', function($scope) {
  }]);
 
 blocJams.controller('Collection.controller', ['$scope', 'SongPlayer', function($scope, SongPlayer) {
+
   $scope.albums = [];
    for (var i = 0; i < 33; i++) {
      $scope.albums.push(angular.copy(albumPicasso));
@@ -363,6 +369,7 @@ blocJams.controller('Collection.controller', ['$scope', 'SongPlayer', function($
 }]);
 
 blocJams.controller('Album.controller', ['$scope', 'SongPlayer', function($scope, SongPlayer) {
+  
   $scope.album = angular.copy(albumPicasso);
 
   var hoveredSong = null;

@@ -3,7 +3,7 @@
   <head>
     <title>Bloc Jams</title>
 
-    <link rel="stylesheet" type="text/css" href="https://yui.yahooapis.com/3.17.1/build/cssreset/cssreset-min.css">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.1/build/cssreset/cssreset-min.css">
     <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/app.css">
@@ -13,6 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.1/ui-bootstrap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.0/buzz.min.js"></script>
     <script src="/javascripts/app.js"></script>
     <script>
@@ -21,18 +22,31 @@
 
   </head>
   
-  <body>
+  <body ng-controller="NavCtrl">
     
     <nav class="player-header-nav navbar">
       <div class="container">
         <div class="navbar-header"> <!-- Nav Bar -->
           <a ui-sref="landing" class="logo navbar-left">
-            <img src="images/blocjams.png">
+            <img id="test" src="images/blocjams.png">
           </a>
+            
+          <ul id="mobileNav" class="visible-xs">
+            <li is-open="status.open">
+              <button class="btn btn-primary btn-lg pull-right">
+                <i class="glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}" ng-click="isCollapsed = !isCollapsed; status.open = !status.open"></i>
+              </button>
+              <ul id="mobileNavCollapsed" collapse="isCollapsed">
+                <li><a class="nohover" ui-sref='collection'>Library</a></li>
+                <li><a class="nohover" href="#">Playlists</a></li>
+                <li><a class="nohover" href="#">Account</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
 
         <ul class="nav navbar-nav navbar-right">
-          <li><a ui-sref='collection'>Library</a></li>
+          <li class="hidden-xs"><a ui-sref='collection'>Library</a></li>
         </ul>
 
       </div>

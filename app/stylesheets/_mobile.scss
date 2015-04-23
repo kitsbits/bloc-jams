@@ -2,10 +2,45 @@
 
   /* landing page, global styles */
   .player-header-nav.navbar {
-    .navbar-nav {
-      li {
-        text-align: center;
-      }
+    img {
+      float: left;
+      margin: 1.5em 0 0 2em;
+    }
+
+    #mobileNav {
+      margin: 1.75em 2em 0 0;
+    }
+
+    .glyphicon {
+      font-size: 1.5em;
+    }
+
+    li {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+
+    .btn-primary {
+      background-color: rgba(123, 70, 163, .9);
+      border: solid 0.15em #fff; 
+    }
+
+    #mobileNavCollapsed {
+      clear: both;
+      font-size: 1.25em;
+    }
+
+    .nohover:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    a {
+      line-height: 45px;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 1.2;
     }
   }
 
@@ -31,10 +66,37 @@
   }
 
   .landing-album-list {
-    /* Example class added to style the album covers for mobile */
     .album-cover {
       position: relative;
       left: calc(50% - 200px);
     }
+  }
+
+/* collection view */
+  .collection-album-info {
+    text-align: center;
+  }
+
+/* player bar */
+  // .player-bar {
+  //   .container {
+  //     display: inline-block;
+  //     padding: 0;
+  //   }
+
+  //   .player-bar-control-group{
+  //     display: inline-block;
+  //     // background-color: red;
+  //   }
+
+  //   .left-controls {
+  //   }
+  // }
+
+/* album view */
+
+  .album-header-container {
+    position: relative;
+    left: calc(50% - 180px);
   }
 }
