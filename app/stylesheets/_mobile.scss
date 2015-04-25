@@ -73,26 +73,59 @@
   }
 
 /* collection view */
+  
+
+  .collection-overlay-button {
+    font-size: 35px !important;
+    width: 62px !important;
+    height: 62px !important;
+
+    i {
+      line-height: 62px !important;
+    }
+  }
+
+
   .collection-album-info {
-    text-align: center;
+    padding: 0.5em 0 0 1.75em;
   }
 
 /* player bar */
-  // .player-bar {
-  //   .container {
-  //     display: inline-block;
-  //     padding: 0;
-  //   }
+  .player-bar {
+    height: 15em !important;
+    background: #5C3989 !important;
 
-  //   .player-bar-control-group{
-  //     display: inline-block;
-  //     // background-color: red;
-  //   }
+    .container {
+      display: block !important;
 
-  //   .left-controls {
-  //   }
-  // }
+    }
+    .left-controls {
+      display: inline-block !important;
+      width: 80% !important;
 
+    }
+
+    .currently-playing {
+      display: block !important;
+      position: relative !important;
+      top: 8em;
+      margin-left: 16%;
+      width: 70% !important;
+    }
+      
+    .play-controls {
+        display: table !important;
+        margin-left: 22%;
+        position: relative !important;
+        top: 2em;
+      
+      .previous, .play-pause, .next {
+        display: table-cell;
+        width: 25% !important;
+        vertical-align: middle;
+      }
+    }
+  }
 /* album view */
 
   .album-header-container {

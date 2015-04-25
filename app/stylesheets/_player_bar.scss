@@ -1,5 +1,4 @@
 .player-bar {
-  $control_width: 25%;
   $player_fontsize_reg: 20px;
   $player_fontsize_lg: 30px;
   $player_fontsize_sm: 16px;
@@ -25,12 +24,12 @@
   }
 
   .left-controls {
-    width: $control_width;
+    width: 25%;
     text-align: left;
   }
 
   .right-controls {
-    width: $control_width;
+    width: 25%;
     text-align: right;
   }
 
