@@ -3,7 +3,7 @@
   <head>
     <title>Bloc Jams</title>
 
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.1/build/cssreset/cssreset-min.css">
+    <link rel="stylesheet" type="text/css" href="https://yui.yahooapis.com/3.17.1/build/cssreset/cssreset-min.css">
     <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/app.css">
@@ -20,6 +20,19 @@
       require('scripts/app');
     </script>
 
+
+    <script>
+      $(window).scroll(function() {
+        $('.selling-points').each(function(){
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+          if (imagePos < topOfWindow+400) {
+            $(this).addClass("slideUp");
+          }
+        });
+      });
+    </script>
   </head>
   
   <body ng-controller="NavCtrl">
