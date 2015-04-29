@@ -273,10 +273,9 @@ if (document.URL.match(/\/album.html/)) {
 });
 
 ;require.register("scripts/app", function(exports, require, module) {
-// require("./landing");
+//require("./landing");
 // require("./collection");
 // require("./album");
-// require("./profile");
 
 // Example Album
 var albumPicasso = {
@@ -293,6 +292,8 @@ var albumPicasso = {
     { name: 'Magenta', length: 375.92, audioUrl: '/music/placeholders/magenta' }
    ]
 };
+
+
 
 blocJams = angular.module('BlocJams', ['ui.router', 'ui.bootstrap']);
 

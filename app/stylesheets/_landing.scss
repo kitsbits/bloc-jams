@@ -8,9 +8,10 @@
     margin-bottom: 50px;
     font-weight: 300;
   }
+}
 
 .selling-points {
-  visibility: hidden;
+  opacity: 0;
   padding: 100px 0; 
 
   .point {
@@ -27,3 +28,4 @@
     }
   }
 }
+
