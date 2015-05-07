@@ -29,3 +29,45 @@
   }
 }
 
+
+.card-container {
+  height: 400px;
+  -webkit-perspective: 600;
+  perspective: 600;
+  position: relative;
+  width: 390px;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  -webkit-transition: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.card .side {
+  //-webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.card .back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  background-color: rgba(255,255,255,0.6);
+  color: #2F1D57;
+  text-align: center;
+  padding-top: 2em;
+
+  h2 {
+    margin-bottom: 1em;
+  }
+}
+
+

@@ -24,6 +24,48 @@
   .selling-points .point p {
     font-size: 16px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_landing\.scss}line{font-family:\0000333}}
+.card-container {
+  height: 400px;
+  -webkit-perspective: 600;
+  perspective: 600;
+  position: relative;
+  width: 390px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_landing\.scss}line{font-family:\0000340}}
+.card {
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_landing\.scss}line{font-family:\0000349}}
+.card:hover {
+  -webkit-transition: rotateY(180deg);
+  transform: rotateY(180deg); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_landing\.scss}line{font-family:\0000353}}
+.card .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_landing\.scss}line{font-family:\0000360}}
+.card .back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #2F1D57;
+  text-align: center;
+  padding-top: 2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_landing\.scss}line{font-family:\0000368}}
+  .card .back h2 {
+    margin-bottom: 1em; }
+
 @media screen and (max-width: 768px) {
   /* landing page, global styles */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_mobile\.scss}line{font-family:\000035}}
@@ -63,6 +105,21 @@
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_mobile\.scss}line{font-family:\0000348}}
   .hero-content h1, .hero-content h3 {
     text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_mobile\.scss}line{font-family:\0000353}}
+  .selling-points {
+    padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_mobile\.scss}line{font-family:\0000355}}
+    .selling-points .point {
+      padding: 1.25em 0.75em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_mobile\.scss}line{font-family:\0000357}}
+      .selling-points .point h5 {
+        height: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_mobile\.scss}line{font-family:\0000360}}
+      .selling-points .point p {
+        text-align: center;
+        font-size: 1.25em;
+        padding: 0.25em; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/CCatherine\/bloc-vagrant\/bloc-jams\/app\/stylesheets\/_mobile\.scss}line{font-family:\0000369}}
   .landing-album-list .album-cover {

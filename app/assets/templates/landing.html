@@ -27,7 +27,16 @@
 <div class="landing-album-list container">
   <div class="row">
     <div class="album-cover col-md-4" ng-repeat="albumURL in albumURLs">
-      <img ng-src="{{albumURL}}">
+      <div class="card-container">
+        <div class="card">
+          <img class="side" ng-src="{{albumURL}}">
+          <div class="side back">        
+            <h2>{{album.artist}}</h2>
+            <h4>{{album.name}}</h4>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+

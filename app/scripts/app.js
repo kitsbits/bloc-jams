@@ -50,9 +50,11 @@ blocJams.controller('NavCtrl', ['$scope', function($scope) {
   $scope.isCollapsed = true;
 }]);
 
-blocJams.controller('Landing.controller', ['$scope', function($scope) {
+blocJams.controller('Landing.controller', ['$scope', 'SongPlayer', function($scope, SongPlayer) {
   
   $scope.heading = "Block Jams";
+
+  $scope.album = angular.copy(albumPicasso);
 
   $scope.subText = "Turn the music up!";
   $scope.subTextClicked = function(){
