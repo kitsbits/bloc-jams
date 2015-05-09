@@ -10,6 +10,17 @@
   }
 }
 
+.tapMe-container {
+  position: relative;
+  top: 12em;
+  left: calc(50% - 100px);
+
+  p {
+    color: rgba(255,255,255,0.2);
+    font-size: 2.5em;
+  }
+}
+
 .selling-points {
   opacity: 0;
   padding: 100px 0; 
